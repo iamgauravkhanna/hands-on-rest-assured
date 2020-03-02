@@ -1,14 +1,11 @@
 package examples;
 
-import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
 public class ValidateContentType {
 
-	@Test
-	public void validateContentType() {
+	public static void main(String... strings) {
 
 		RestAssured.baseURI = "http://services.groupkt.com/state/get/USA/all";
 
