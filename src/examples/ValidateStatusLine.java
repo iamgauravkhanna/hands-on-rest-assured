@@ -22,7 +22,7 @@ public class ValidateStatusLine {
 		// statusLine
 		String statusLine = response.getStatusLine();
 
-		Assert.assertEquals(statusLine /* actual value */, "HTTP/1.1 200 OK" /* expected value */,
+		Assert.assertEquals(statusLine /* actual value */, "HTTP/1.1 201 OK" /* expected value */,
 				"Correct status code not returned");
 
 	}

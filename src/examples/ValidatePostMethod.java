@@ -1,17 +1,15 @@
 package examples;
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
-import org.json.simple.JSONObject;
-
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 
 public class ValidatePostMethod {
 
@@ -54,7 +52,7 @@ public class ValidatePostMethod {
 	@Test(enabled = true)
 	public void validatePostMethod2() throws IOException {
 
-		String jsonFilePath = System.getProperty("user.dir") + "\\db_config.json";
+		String jsonFilePath = System.getProperty("user.dir") + "/db_config.json";
 
 		System.out.println("File Path : " + jsonFilePath);
 
